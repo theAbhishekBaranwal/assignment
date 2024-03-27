@@ -1,11 +1,6 @@
 import React, { useEffect } from "react";
 
-import {
-  AlertDialog,
-  AlertDialogContent,
-  AlertDialogOverlay,
-  useDisclosure,
-} from "@chakra-ui/react";
+import {AlertDialog, AlertDialogContent, AlertDialogOverlay, useDisclosure,} from "@chakra-ui/react";
 
 function Popover(props) {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -14,7 +9,6 @@ function Popover(props) {
 
   useEffect(() => {
     onOpen();
-    // eslint-disable-next-line
   }, []);
 
   const ClosePopOver = () => {
